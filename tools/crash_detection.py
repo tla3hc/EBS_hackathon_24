@@ -11,12 +11,12 @@ def check_if_crashed(vehicle):
         current_acceleration = vehicle.get_vehicle_acceleration().linear
         if current_acceleration.x - previous_acceleration.x > CRASH_THRESHOLD:
             print("Crash detected!")
-            break
+            # break
         elif current_acceleration.y - previous_acceleration.y > CRASH_THRESHOLD:
             print("Crash detected!")
-            break
+            # break
         elif current_acceleration.z - previous_acceleration.z > CRASH_THRESHOLD:
             print("Crash detected!")
-            break
-        print(current_acceleration.x - previous_acceleration.x )
+            # break
+        # print(current_acceleration.x - previous_acceleration.x )
         previous_acceleration = current_acceleration
